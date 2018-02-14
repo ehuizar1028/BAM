@@ -28,6 +28,7 @@ class EC2():
         return a
 
     def EC2Config(self,args):
+        session = boto3.Session(aws_access_key_id='YOUR_KEY', aws_secret_access_key='YOUR_SECRET_KEY')
 
         if args.SecurityGroupIds is None or args.SecurityGroupIds == '':
             secGroups = []
@@ -42,7 +43,7 @@ class EC2():
                     service httpd start;
                     echo "AWS Automation is Fun!" > /var/www/html/index.html
                     """
-        inst = boto3.resource('ec2')
+        inst = session.resource('ec2')
         inst.create_instances(
             ImageId=args.ImageId,
             InstanceType=args.InstanceType,

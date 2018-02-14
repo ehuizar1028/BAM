@@ -3,6 +3,7 @@ There are no required parameters. Ensure that AWS access/secret keys are configu
 python EC2.py
 A list will be outputted with all parameters defined. Any empty parameters mean it's using the default parameter.
 Public IP address is automatically assigned.
+NOTE: ACCESS/SECRET KEYS ARE HARDCODED. THIS IS NOT BEST PRACTICE, I REMOVED MY KEYS AND REPLACED THEM WITH OBVIOUS VALUES.
 
 USAGE:
 --VolumeSize = Size of the EBS Volume, in GB
