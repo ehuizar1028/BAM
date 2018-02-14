@@ -29,7 +29,7 @@ class EC2():
 
     def EC2Config(self,args):
         region = args.AZ ##defines the region
-        session = boto3.Session(aws_access_key_id='AKIAI7O6CWOSFOJFQ4VQ', aws_secret_access_key='neYiVS8LEJDPxcc8aMNSoJXi9nCWhG4PIXAHywdH', region_name=region[:-1]) ##input the connection credentials
+        session = boto3.Session(aws_access_key_id='YOUR_KEY', aws_secret_access_key='YOUR_KEY', region_name=region[:-1]) ##input the connection credentials
         if args.SecurityGroupIds is None or args.SecurityGroupIds == '':
             secGroups = [] ##If there is no security group defined, use empty list, which is equal to default parameter
         else:
