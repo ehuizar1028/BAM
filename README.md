@@ -1,4 +1,8 @@
 README:  
+Script Info:  
+Python 2.7  
+Boto3 Package  
+  
 There are no required parameters. Ensure that AWS access/secret keys are configured for programmatic access via IAM.  
 A list will be outputted with manual defined parameters. Any empty parameters mean it's using the default parameter.  
 Public IP address is automatically assigned.  
